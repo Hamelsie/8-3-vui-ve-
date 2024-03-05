@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
- <audio id="song"autoplay>
-        <source src="image/nhac.mp3" type="audio/mp3">
-    </audio>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -461,7 +458,7 @@
            <textPath style="font-family: fantasy;" xlink:href="#partialPath" startOffset="12">
                 🌹Happy Women's Day
                 🌹.........................................................................................................................................🌹From
-                  Bé Thư🌹
+                 ....Bé Thư🌹
             </textPath>
         </text>
 
@@ -934,8 +931,18 @@
             },
             autoplay: true,
         });
-
-    </script>
+     // ------audio------------
+var buttonSong = document.querySelector('.button')
+var mySong = document.getElementById("song")
+buttonSong.onclick= function(){
+    if(mySong.paused){
+        mySong.play()
+    }
+}
+ <audio id="song"autoplay>
+  <source src="image/nhac.mp3" type="audio/mp3">
+    </audio>
+ </script>
 </body>
 
 </html>
